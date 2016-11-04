@@ -1,0 +1,75 @@
+./project:
+        ./project - remove sections from each line of files.
+SYNTAX:
+	./project OPTION... [FILE]...
+	
+EXAMPLE:
+	project -c 3 file.txt
+	
+DESCRIPTION:
+	
+	Print selected parts of character/byte from each FILE to standard output.
+
+OPTION:
+
+	-c, --characters
+	           select only characters from file.
+	
+	-b, --bytes
+              	   select only these byte from file.
+        
+        --complement
+        	   complement the set of selected bytes, characters.
+       	
+       	--help
+       		   --help display this help.
+
+EXAMPLE:
+
+./project -c N filename		 
+	It displays the N position character of each line from file on standard output.
+	
+./project -c -M filename	  
+	It displays the starting M number of character of each line from file on standard output.
+	
+./project -c N- filename   	 			
+	It skip the starting N number of character and disply remaining on standard output.
+	
+./project -c N-M filename	 	
+	It displays character between N-M range.
+	
+./project -b N filename		 
+	It displays the N position bytes of each line from file on standard output.	
+	
+./project -b -M filename	 
+	It displays the starting M number of bytes of each line from file on standard output. 	
+	
+./project -b N- filename         			
+	It skip the starting N number of bytes and disply remaining on standard output.
+	
+./project -b N-M filename	 	
+	It displays bytes between N-M range.
+	
+./project -c N filename	--complement	 
+	It skip the N position character of each line from file and display remaining on standard output.
+	
+./project -c -M filename --complement	 
+ 	It skip the starting M number of character of each line from file and display remaining on standard output.
+ 	
+./project -c N- filename --complement	 		
+	It display the starting N number of character on standard output and skip remaining.
+	
+./project -c N-M filename --complement	 	
+	It skip character between N-M range and display  remaining on standard output.
+	
+./project -b N filename	--complement	 	
+	It skip the N position bytes of each line from file and display remaining on standard output.
+	
+./project -b -M filename --complement	 
+ 	It skip the starting M number of bytes of each line from file and display remaining on standard output. 	
+ 	
+./project -b N- filename --complement	 
+	It display the starting N number of bytes on standard output and skip remaining.		
+
+./project -b N-M filename --complement		
+	It skip bytes between N-M range and display  remaining on standard output .
