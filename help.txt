@@ -1,6 +1,6 @@
 ./project:
         ./project - remove sections from each line of files.
-SYNTAX:
+SYNTAX :
 	./project OPTION... [FILE]...
 	
 EXAMPLE:
