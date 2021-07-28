@@ -1,6 +1,6 @@
 Title of project : Implement the cut command.
 
-Name : Shubham Shinde
+Name : Shubham subhash Shinde
 
 MIS NO : 141608012
 
