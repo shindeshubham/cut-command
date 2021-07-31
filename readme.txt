@@ -2,7 +2,7 @@ Title of project : Implement the cut command.
 
 Name : Shubham Subhash Shinde
 
-MIS NO : 141608012
+MIS NO : 141608012/2131964
 
 Description :
 	  	In this project the cut command Print selected parts of character, byte from each FILE to standard output.
